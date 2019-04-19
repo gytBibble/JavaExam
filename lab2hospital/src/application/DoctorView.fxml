@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="534.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.24812030075187969" layoutX="89.0" layoutY="46.0" orientation="VERTICAL" prefHeight="534.0" prefWidth="713.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="206.0" prefWidth="711.0">
+               <children>
+                  <Label layoutX="64.0" layoutY="33.0" text="欢迎" />
+                  <Label layoutX="61.0" layoutY="59.0" text="医生信息查询" />
+                  <Button layoutX="308.0" layoutY="37.0" mnemonicParsing="false" text="Button" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="391.0" prefWidth="711.0">
+               <children>
+                  <TabPane layoutX="40.0" layoutY="29.0" prefHeight="417.0" prefWidth="711.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <tabs>
+                        <Tab text="病人列表">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView layoutX="14.0" layoutY="14.0" prefHeight="388.0" prefWidth="711.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn prefWidth="120.0" text="挂号编号" />
+                                          <TableColumn prefWidth="120.0" text="病人名称" />
+                                          <TableColumn prefWidth="120.0" text="挂号日期时间" />
+                                          <TableColumn prefWidth="120.0" text="号种类别" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="收入列表">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollBar layoutX="697.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="391.0" prefWidth="14.0" />
+                                    <TableView layoutX="100.0" layoutY="78.0" prefHeight="388.0" prefWidth="711.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn prefWidth="100.0" text="科室名称" />
+                                          <TableColumn prefWidth="100.0" text="医生编号" />
+                                          <TableColumn prefWidth="100.0" text="医生名称" />
+                                          <TableColumn prefWidth="100.0" text="号种类别" />
+                                          <TableColumn prefWidth="100.0" text="挂号次数" />
+                                          <TableColumn prefWidth="100.0" text="收入合计" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="294.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginSceneController">
+   <children>
+      <Button fx:id="ButtonLogin" layoutX="206.0" layoutY="230.0" mnemonicParsing="false" onAction="#loginEvent" prefHeight="23.0" prefWidth="60.0" text="登 陆" />
+      <Button fx:id="ButtonClear" layoutX="283.0" layoutY="230.0" mnemonicParsing="false" onAction="#clearEvent" prefHeight="23.0" prefWidth="60.0" text="清 除" />
+      <TextField fx:id="TextFieldUserName" layoutX="205.0" layoutY="156.0" prefHeight="23.0" prefWidth="248.0" promptText="please input your password here" />
+      <TextField fx:id="TextFieldPassword" layoutX="205.0" layoutY="185.0" prefHeight="23.0" prefWidth="248.0" promptText="please input your username here" />
+      <Text fx:id="txt_1" layoutX="81.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="您好，欢迎使用医院挂号系统！">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="txt_2" layoutX="124.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="登陆身份：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txt_3" layoutX="138.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="txt_4" layoutX="137.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密    码：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="ComboBoxLogin" layoutX="206.0" layoutY="111.0" onAction="#ChooseEvent" prefHeight="23.0" prefWidth="70.0">
+      	<items>
+        	<FXCollections fx:factory="observableArrayList">
+          		<String fx:value="病人" />
+          		<String fx:value="医生" />
+        	</FXCollections>
+     	 </items>
+      </ComboBox>
+      <Button fx:id="ButtonExit" layoutX="360.0" layoutY="230.0" mnemonicParsing="false" onAction="#ExitEvent" prefHeight="23.0" prefWidth="56.0" text="退 出" />
+   </children>
+</AnchorPane>
